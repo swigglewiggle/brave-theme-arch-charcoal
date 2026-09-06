@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>arch-charcoal</title>
+<link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <canvas id="net"></canvas>
+
+  <main>
+    <div class="prompt" id="prompt">root<span class="accent">@</span>arch <span class="path">~</span> <span class="cursor">_</span></div>
+
+    <div class="clock" id="clock">00:00</div>
+    <div class="date" id="date">-</div>
+
+    <form id="searchForm" class="search" autocomplete="off">
+      <span class="prompt-glyph">&gt;</span>
+      <input id="searchInput" type="text" placeholder="search" spellcheck="false" autofocus>
+    </form>
+
+    <div class="links" id="links"></div>
+  </main>
+
+  <img class="logo" src="arch-logo.svg" alt="">
+
+  <button id="notesToggle" class="notes-toggle" title="notes">&#9998;</button>
+  <div id="notesPanel" class="notes-panel">
+    <textarea id="notesText" placeholder="notes..."></textarea>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
